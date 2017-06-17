@@ -1,0 +1,82 @@
+/* Styles go here */
+
+
+/* enable absolute positioning */
+.search{}
+.search__input {
+  position: relative;
+}
+.search {
+  background: #433d5d;
+  padding: 10px;
+}
+
+/* style glyph */
+
+.search__input .glyphicon {
+  position: absolute;
+  padding: 25px 0 5px 5px;
+  pointer-events: none;
+  color: #716c86;
+  font-size: 30px;
+}
+
+
+/* align glyph */
+
+.list{
+  position: absolute;
+  cursor: default;
+  z-index: 30 !important;
+  margin-top: 2%;
+  margin-left: 9.9%;
+  width: 100%;
+}
+
+.search__input .glyphicon {
+  left: 0px;
+}
+
+/* add css to input  */
+
+.search__input input {
+  margin: 21px 10px 21px 60px;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: inset 0 0 0;
+  box-shadow: 0 0 0;
+  background: none;
+  color: #fff;
+  border-bottom: 2px solid #716c86;
+  width: 50%;
+  padding-bottom: 7px;
+  border-radius: 0;
+  font-size: 20px;
+}
+
+.row div {
+  float: left;
+  display: inline;
+}
+
+
+.stripe:nth-child(even) {
+  background: #e9e9e9;
+}
+
+.stripe:nth-child(odd) {
+  background: white;
+}
+
+.stripe .container-fluid .row {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .row div{
+    display:block;
+    float:none;
+    padding-top:5px;
+    
+  }
+}

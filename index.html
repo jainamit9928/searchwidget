@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search Widget</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="clientService.service.js"></script>
+    <script type="text/javascript" src="app.module.js"></script>
+    <script type="text/javascript" src="searchComponent.component.js"></script>
+    <script type="text/javascript" src="clientController.controller.js"></script>
+    <script type="text/javascript" src="mock-clients.json"></script>
+    <script type="text/javascript" src="constants.js"></script>
+	 </head>
+<body ng-app="app">
+    <div ng-controller="clientController as ctrl">
+    <view-client-list filtered-list="ctrl.filteredList" update-clients-detail ="ctrl.updateClientsDetail(val)" ></view-client-list>
+    </div>
+  </body>
+
+</html>
